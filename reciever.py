@@ -114,8 +114,8 @@ GPIO.add_event_detect(20, GPIO.BOTH, callback=buttonPressed)
 lcd_init()                  # Initialize the LCD
 LCD_BACKLIGHT = 0x08        # Turn on the backlight
 
-lcd_string("Hello, worl'''d!", LCD_LINE_1)              # Display a message
-marquee_smooth("Python on QNX 8!", LCD_LINE_2)       # Scroll second message
+marquee_smooth("Hello, worl'''d!", LCD_LINE_1)              # Display a message
+lcd_string("Python on QNX 8!", LCD_LINE_2)       # Scroll second message
 
 time.sleep(5)                                         # Wait for a while
 LCD_BACKLIGHT = 0x00                                 # Turn off backlight
